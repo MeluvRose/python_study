@@ -56,3 +56,7 @@
   - ...
 
 - Pypi(pypi.org) : standard library에 포함되어 있지 않은 것들
+
+- Status codes (HTTP Request)
+  - 3XX : redirect or cash
+  - 4XX : error
