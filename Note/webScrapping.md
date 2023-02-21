@@ -21,6 +21,8 @@
   `soup.find_all("a", class_="sister") <CSS Class>`
   `soup.find_all(class_=re.compile("itl"))`
 
+- ## Transfer HTML Tag to 'Beautifulsoup' entity
+
 ## Keyword Arguments
 
 - ex)
@@ -40,4 +42,18 @@
 
   Parameter에 맞게 argument를 직접 입력한다면, 순서에 신경쓰지 않을 수 O
 
--
+## Etc
+
+- (크지 않은) 배열의 각 요소를 변수처럼 사용하고 싶을 때,
+
+  ```python
+    list_of_numbers = [1,2,3]
+
+    // (1)
+    first = list_of_numbers[0]
+    second = list_of_numbers[1]
+    third = list_of_numbers[2]
+
+    // (2)
+    first, second, third = list_of_numbers
+  ```
