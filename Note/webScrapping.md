@@ -10,4 +10,6 @@
   1. 모든 사이트가 사용가능하지 X
   2. 스크랩한 데이터를 상업적으로 사용할 경우, 법적인 문제가 발생할 수도
 
--
+- making 'soup' with parser
+
+  `BeautifulSoup(markup, "html.parser")`
