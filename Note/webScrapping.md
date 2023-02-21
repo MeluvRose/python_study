@@ -21,7 +21,9 @@
   `soup.find_all("a", class_="sister") <CSS Class>`
   `soup.find_all(class_=re.compile("itl"))`
 
-- ## Transfer HTML Tag to 'Beautifulsoup' entity
+- Transfer HTML Tag to 'Beautifulsoup' entity
+
+- (Beautifulsoup element).string()
 
 ## Keyword Arguments
 
