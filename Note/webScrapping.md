@@ -105,3 +105,5 @@
     // (2)
     first, second, third = list_of_numbers
   ```
+
+- `None`
