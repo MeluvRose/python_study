@@ -12,4 +12,32 @@
 
 - making 'soup' with parser
 
-  `BeautifulSoup(markup, "html.parser")`
+  `soup = BeautifulSoup(markup, "html.parser")`
+
+- soup.find_all()
+
+  `soup.find_all("a", attrs={"class": "sister"}) <Attrs>`
+
+  `soup.find_all("a", class_="sister") <CSS Class>`
+  `soup.find_all(class_=re.compile("itl"))`
+
+## Keyword Arguments
+
+- ex)
+
+  ```python
+  def sayHello(name, age):
+      print(f"Hello {name}, you are {age} years old")
+  ```
+
+  라는 함수가 있다면, 순서에 맞게
+
+  `say_hello("nico", 12)`
+
+  라고 불러올 수도 있지만
+
+  `say_hello(age=12, name="nico")`
+
+  Parameter에 맞게 argument를 직접 입력한다면, 순서에 신경쓰지 않을 수 O
+
+-
