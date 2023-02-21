@@ -50,6 +50,46 @@
 
   Parameter에 맞게 argument를 직접 입력한다면, 순서에 신경쓰지 않을 수 O
 
+## Selenium
+
+- 코드를 사용해서 브라우저를 자동화 하고 제어할 수 있는 방법은 'Selenium'이라는 것을 사용하면 된다.
+
+- request.get()을 이용한 호출의 상태코드 '403' 응답에 대한 대처법 중 1개 이기도 하다.
+  (강의에선 'indeed'가 request를 이용한 접근을 차단)
+
+- setting guide
+
+  1. install chrome driver
+  2. `pip i selenium` and install chromedriver (or `pip i webdriver_manager`)
+
+  - IF, webdriver_manager를 받았다면,
+
+    `chrome_driver = ChromeDriverManager().install()`
+
+    위의 함수 실행으로, chromeDriver 설치 및 파일 경로를 받아올 수 있다.
+
+  3.  (`DevToolsActivePort file doesn't exist`)과 같은 error를 피하기 위해,
+      다음과 같이 option을 설정
+
+          ```python
+          options = Options()
+          options.add_argument("--no-sandbox")
+          options.add_argument("--disable-dev-shm-usage")
+
+          chrome_driver = ChromeDriverManager().install()
+          browser = webdriver.Chrome(
+          service=Service(ChromeDriverManager().install()), options=options
+          )
+          ```
+
+  4.  이후 `browser`를 request 라이브러리처럼 사용가능
+
+- selenium의 webdriver 방식의 사용법은 공식 문서 참고
+  (https://www.selenium.dev/documentation/webdriver/)
+
+- 한글 깨짐 방지 : 한글 전용 폰트(ex) NanumFont)를 설치 및 적용할 것(mkdir + mv)
+  - path : /usr/share/fonts/truetype
+
 ## Etc
 
 - (크지 않은) 배열의 각 요소를 변수처럼 사용하고 싶을 때,
