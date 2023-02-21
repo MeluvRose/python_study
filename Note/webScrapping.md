@@ -25,6 +25,12 @@
 
 - (Beautifulsoup element).string()
 
+- find...() property 'recursive' (boolean)
+
+  - `False`일 경우, 조건에 맞는 tag이더라도, 바로 다음 깊이의 tag까지만을 탐색
+
+-
+
 ## Keyword Arguments
 
 - ex)
