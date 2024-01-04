@@ -10,6 +10,8 @@
   1. 모든 사이트가 사용가능하지 X
   2. 스크랩한 데이터를 상업적으로 사용할 경우, 법적인 문제가 발생할 수도
 
+- Beautifulsoup은 Html string을 list와 dict의 데이터 구조로 변환시켜 사용
+
 - making 'soup' with parser
 
   `soup = BeautifulSoup(markup, "html.parser")`
@@ -29,7 +31,7 @@
 
   - `False`일 경우, 조건에 맞는 tag이더라도, 바로 다음 깊이의 tag까지만을 탐색
 
--
+- select()
 
 ## Keyword Arguments
 
@@ -107,3 +109,9 @@
   ```
 
 - `None`
+
+**⭐ 가져오려는 데이터와 가장 일치하는 이름의 클래스(Id)를 가져오는 것이 매우 중요.**
+
+- 다른 Tag에서 중복되는 이름의 다른 값을 가져올 확률이 적어지기 때문
+
+- aria-label : 시각 장애가 있는 사람들에게 페이지를 읽어주도록 하기 위한 Property
